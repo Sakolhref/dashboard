@@ -1,0 +1,25 @@
+
+
+.allcards{
+    display: flex; /* Makes the container a flexbox */
+    flex-direction: row; /* Aligns items in a row (default for flexbox) */
+    gap: 10px; /* Adds spacing between items */
+    justify-content: flex-start; /* Align items to the left (default behavior) */
+    align-items: center; /* Align items vertically in the center */
+    
+}
+
+.mycard{
+    display: flex;
+    background-color: bisque;
+    height: 200px;
+    width: 250px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+/* .card-image{
+    width: 200px;
+    height: 200px;
+} */
+

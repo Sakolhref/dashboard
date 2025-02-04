@@ -1,0 +1,67 @@
+/* Sidebar container */
+.sidebar {
+    width: 60px;
+    height: 400px;
+    background-color: white;
+    overflow: hidden;
+    position:absolute;
+    transition: width 0.3s ease-in-out;
+    z-index: 1;
+    border-bottom-right-radius: 15px ;
+  }
+  
+  /* Expanded sidebar styling on hover */
+  .sidebar:hover {
+    width: 200px;
+  }
+  
+  /* Inner content of sidebar */
+  .sidebar1 {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    height: 100%;
+  }
+  
+  /* Sidebar list */
+  .sidebar-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+  
+  /* Sidebar items */
+  .sidebar-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    transition: background-color 0.2s;
+  }
+  
+  .sidebar-item:hover {
+    background-color: #f0f0f0;
+  }
+  
+  /* SVG icons */
+  .sidebar-item svg {
+    margin-right: 10px;
+    flex-shrink: 0;
+  }
+  
+  /* Hidden text in default state */
+  .sidebar-text {
+    opacity: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    transition: opacity 0.2s;
+  }
+  
+  /* Make text visible when sidebar is expanded */
+  .sidebar:hover .sidebar-text {
+    opacity: 1;
+  }
+  
